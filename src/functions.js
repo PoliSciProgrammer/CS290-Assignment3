@@ -1,3 +1,4 @@
+//STUDENT JOE GARDENHIRE
 /**
 * the \@param notation indicates an input paramater for a function. For example
 * @param {string} foobar - indicates the function should accept a string
@@ -13,7 +14,9 @@
 */
 
 //your code here
-
+function uselessFunction() {
+	return null;
+};
 //end your code
 
 var bar = 'not a function';
@@ -30,7 +33,15 @@ var barType = typeof bar;
 */
 
 //your code here
-
+var bar = function(doubleArray){
+	for(i = 0; i < doubleArray.length; i++){
+		doubleArray[i] = doubleArray[i] * 2;
+		if (isNaN(doubleArray[i])){
+			return false;
+		}
+	}
+	return true;
+}
 //end your code
 
 /**
@@ -66,5 +77,29 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+function parseGit (logArray){
+	var hash;
+	var message;
+	var date;
+	var parse = [];
+	var parseLogArr = [];
+	var myLog
+	for (i = 0; i < logArray.length; i++){
+		parse = logArray[i].split(" ");
+		hash = parse[0];
+		parse.splice(0,1);
+		var parseDate = parse.join(" ");
+		parseDate = parseDate.split("\"");
+		parseDate.pop();
+		date = new Date(parseDate[0]);
+		message = parseDate[1];
 
+		myLog = new GitLog(hash, date, message);
+		parseLogArr.push(myLog);
+//		date:parseDate;
+//				message:logArray[i].slice(40, logArray.lastIndexOf());
+	
+	}
+	return parseLogArr;
+}
 //end your code
