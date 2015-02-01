@@ -1,1 +1,8 @@
 You log goes in this  file.
+Start: Sat, 31 Jan 2015 15:30:00 -0800
+End: Sat, 31 Jan 2015 20:20:30 -0800
+Tasks: During this period I did everything I could on assignment 3 part 1.  I would say I'm about 80 percent done.  Breaking for dinner!
+
+Start: Sat, 31 Jan 2015 21:30:00 -0800
+End: Sun, 1 Feb 2015 00:35:28 -0800
+Tasks: I finally finished up with the last bits of the assignement.  I had problems with the date error which took me about 3 hours by itself to figure out.
